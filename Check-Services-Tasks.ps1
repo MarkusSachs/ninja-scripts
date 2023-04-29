@@ -7,7 +7,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -41,7 +41,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -58,7 +58,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -75,7 +75,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -92,7 +92,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -109,7 +109,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -126,7 +126,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -143,7 +143,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -160,7 +160,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -177,7 +177,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -Name '$serviceName'
+        Start-Service -Name $serviceName
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
