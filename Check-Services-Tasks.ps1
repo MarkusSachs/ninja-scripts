@@ -68,3 +68,53 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 }
 
 
+# Check Remotedesktop-Verbindungsbroker
+$serviceName = 'Tssdis'
+
+If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status
+
+    if ( $status.Status -ne "Running") {
+        Write-Output "Service $serviceName nor running"
+        Start-Service -DisplayName '$serviceName'
+    } else {
+        Write-Output "Service $serviceName is running nothig to do"
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+# Check RemotApp und Desktopverbindungsverwaltung
+$serviceName = 'TScPubRPC'
+
+If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status
+
+    if ( $status.Status -ne "Running") {
+        Write-Output "Service $serviceName nor running"
+        Start-Service -DisplayName '$serviceName'
+    } else {
+        Write-Output "Service $serviceName is running nothig to do"
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+# Check RemotApp und Desktopverbindungsverwaltung
+$serviceName = 'TScPubRPC'
+
+If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status
+
+    if ( $status.Status -ne "Running") {
+        Write-Output "Service $serviceName nor running"
+        Start-Service -DisplayName '$serviceName'
+    } else {
+        Write-Output "Service $serviceName is running nothig to do"
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
