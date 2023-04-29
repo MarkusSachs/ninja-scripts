@@ -16,7 +16,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 } 
 
 # Check CheckmkServic
-$serviceName = 'CheckmkService'
+$serviceName = 'CheckMkService'
 
 If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
     $status = Get-Service -Name $serviceName
