@@ -7,7 +7,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -24,14 +24,13 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
 } else {
     Write-Host Service $serviceName not found
 } 
-
 
 # Check eMOEVEWebService
 $serviceName = 'eMOEVEWebService'
@@ -42,7 +41,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -59,110 +58,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
-    } else {
-        Write-Output "Service $serviceName is running nothig to do"
-    }
-} else {
-    Write-Host Service $serviceName not found
-}
-
-
-# Check Remotedesktop-Verbindungsbroker
-$serviceName = 'Tssdis'
-
-If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
-    $status = Get-Service -Name $serviceName
-    #Write-Output $status
-
-    if ( $status.Status -ne "Running") {
-        Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
-    } else {
-        Write-Output "Service $serviceName is running nothig to do"
-    }
-} else {
-    Write-Host Service $serviceName not found
-}
-
-# Check RemotApp und Desktopverbindungsverwaltung
-$serviceName = 'TScPubRPC'
-
-If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
-    $status = Get-Service -Name $serviceName
-    #Write-Output $status
-
-    if ( $status.Status -ne "Running") {
-        Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
-    } else {
-        Write-Output "Service $serviceName is running nothig to do"
-    }
-} else {
-    Write-Host Service $serviceName not found
-}
-
-# Check RDMS
-$serviceName = 'RDMS'
-
-If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
-    $status = Get-Service -Name $serviceName
-    #Write-Output $status
-
-    if ( $status.Status -ne "Running") {
-        Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
-    } else {
-        Write-Output "Service $serviceName is running nothig to do"
-    }
-} else {
-    Write-Host Service $serviceName not found
-}
-
-# Check SessionEnv
-$serviceName = 'SessionEnv'
-
-If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
-    $status = Get-Service -Name $serviceName
-    #Write-Output $status
-
-    if ( $status.Status -ne "Running") {
-        Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
-    } else {
-        Write-Output "Service $serviceName is running nothig to do"
-    }
-} else {
-    Write-Host Service $serviceName not found
-}
-
-# Check TermService
-$serviceName = 'TermService'
-
-If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
-    $status = Get-Service -Name $serviceName
-    #Write-Output $status
-
-    if ( $status.Status -ne "Running") {
-        Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
-    } else {
-        Write-Output "Service $serviceName is running nothig to do"
-    }
-} else {
-    Write-Host Service $serviceName not found
-}
-
-# Check TermServLicensing
-$serviceName = 'TermServLicensing'
-
-If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
-    $status = Get-Service -Name $serviceName
-    #Write-Output $status
-
-    if ( $status.Status -ne "Running") {
-        Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -179,7 +75,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -196,24 +92,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
-    } else {
-        Write-Output "Service $serviceName is running nothig to do"
-    }
-} else {
-    Write-Host Service $serviceName not found
-}
-
-# Check UmRdpService
-$serviceName = 'UmRdpService'
-
-If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
-    $status = Get-Service -Name $serviceName
-    #Write-Output $status
-
-    if ( $status.Status -ne "Running") {
-        Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -230,7 +109,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -247,7 +126,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -264,7 +143,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -281,7 +160,7 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
     }
@@ -298,9 +177,151 @@ If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
 
     if ( $status.Status -ne "Running") {
         Write-Output "Service $serviceName nor running"
-        Start-Service -DisplayName '$serviceName'
+        Start-Service -Name '$serviceName'
     } else {
         Write-Output "Service $serviceName is running nothig to do"
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+############# Terminaldeinste werfen  Fehler wenn nicht der Starttype überpüft wird deswegen andere Behandlung
+
+# Check UmRdpService
+$serviceName = 'UmRdpService'
+
+If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status.Status
+    #Write-Output $status.StartType
+
+    if ( $status.StartType -notlike "Manual" ) {
+        if ( $status.Status -ne "Running") {
+            Write-Output "Service $serviceName not running"
+            Start-Service -Name $serviceName
+        } else {
+            Write-Output "Service $serviceName is running nothig to do"
+        }
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+# Check TermServLicensing
+$serviceName = 'TermServLicensing'
+
+If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status.Status
+    #Write-Output $status.StartType
+
+    if ( $status.StartType -notlike "Manual" ) {
+        if ( $status.Status -ne "Running") {
+            Write-Output "Service $serviceName not running"
+            Start-Service -Name $serviceName
+        } else {
+            Write-Output "Service $serviceName is running nothig to do"
+        }
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+# Check TermService
+$serviceName = 'TermService'
+
+If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) { 
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status.Status
+    #Write-Output $status.StartType
+
+    if ( $status.StartType -notlike "Manual" ) {
+        if ( $status.Status -ne "Running") {
+            Write-Output "Service $serviceName not running"
+            Start-Service -Name $serviceName
+        } else {
+            Write-Output "Service $serviceName is running nothig to do"
+        }
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+#Check SessionEnv
+$serviceName = 'SessionEnv'
+
+IIf (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status.Status
+    #Write-Output $status.StartType
+
+    if ( $status.StartType -notlike "Manual" ) {
+       if ( $status.Status -ne "Running") {
+            Write-Output "Service $serviceName not running"
+            Start-Service -Name $serviceName
+        } else {
+            Write-Output "Service $serviceName is running nothig to do"
+        }
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+# Check RemotApp und Desktopverbindungsverwaltung
+$serviceName = 'TScPubRPC'
+
+If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status.Status
+    #Write-Output $status.StartType
+
+    if ( $status.StartType -notlike "Manual" ) {
+        if ( $status.Status -ne "Running") {
+            Write-Output "Service $serviceName not running"
+            Start-Service -Name $serviceName
+        } else {
+            Write-Output "Service $serviceName is running nothig to do"
+        }
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+# Check RDMS
+$serviceName = 'RDMS'
+
+If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status.Status
+    #Write-Output $status.StartType
+
+    if ( $status.StartType -notlike "Manual" ) {
+        if ( $status.Status -ne "Running") {
+            Write-Output "Service $serviceName not running"
+            Start-Service -Name $serviceName
+        } else {
+            Write-Output "Service $serviceName is running nothig to do"
+        }
+    }
+} else {
+    Write-Host Service $serviceName not found
+}
+
+# Check Remotedesktop-Verbindungsbroker
+$serviceName = 'Tssdis'
+
+If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+    $status = Get-Service -Name $serviceName
+    #Write-Output $status.Status
+    #Write-Output $status.StartType
+
+    if ( $status.StartType -notlike "Manual" ) {
+        if ( $status.Status -ne "Running") {
+            Write-Output "Service $serviceName not running"
+            Start-Service -Name $serviceName
+        } else {
+            Write-Output "Service $serviceName is running nothig to do"
+        }
     }
 } else {
     Write-Host Service $serviceName not found
