@@ -250,13 +250,13 @@ If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
 #Check SessionEnv
 $serviceName = 'SessionEnv'
 
-IIf (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+If (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
     $status = Get-Service -Name $serviceName
     #Write-Output $status.Status
     #Write-Output $status.StartType
 
     if ( $status.StartType -notlike "Manual" ) {
-       if ( $status.Status -ne "Running") {
+        if ( $status.Status -ne "Running") {
             Write-Output "Service $serviceName not running"
             Start-Service -Name $serviceName
         } else {
